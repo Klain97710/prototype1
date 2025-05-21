@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>静心 - 发现</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.7.2/css/all.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <div class="container mx-auto px-4 py-5 pb-20">
+        <!-- 顶部搜索栏 -->
+        <div class="mb-6">
+            <div class="flex items-center bg-white rounded-full shadow-sm px-4 py-2">
+                <i class="fas fa-search text-gray-400 mr-3"></i>
+                <input type="text" placeholder="搜索冥想课程、音乐..." class="flex-grow border-none outline-none text-sm">
+            </div>
+        </div>
+
+        <!-- 分类标签 -->
+        <div class="flex space-x-3 overflow-x-auto pb-3 mb-6" style="scrollbar-width: none;">
+            <a href="#" class="bg-purple-600 text-white px-4 py-2 rounded-full text-sm whitespace-nowrap">全部</a>
+            <a href="#" class="bg-white text-gray-600 px-4 py-2 rounded-full text-sm whitespace-nowrap shadow-sm">初学者</a>
+            <a href="#" class="bg-white text-gray-600 px-4 py-2 rounded-full text-sm whitespace-nowrap shadow-sm">睡眠</a>
+            <a href="#" class="bg-white text-gray-600 px-4 py-2 rounded-full text-sm whitespace-nowrap shadow-sm">专注力</a>
+            <a href="#" class="bg-white text-gray-600 px-4 py-2 rounded-full text-sm whitespace-nowrap shadow-sm">放松</a>
+            <a href="#" class="bg-white text-gray-600 px-4 py-2 rounded-full text-sm whitespace-nowrap shadow-sm">焦虑</a>
+        </div>
+
+        <!-- 精选专题 -->
+        <div class="mb-8">
+            <h2 class="text-base font-bold mb-4">精选专题</h2>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="overflow-hidden rounded-2xl shadow-sm bg-white">
+                    <div class="h-32 bg-gradient-purple flex items-end p-4">
+                        <h3 class="text-white font-semibold">七天入门</h3>
+                    </div>
+                    <div class="p-3">
+                        <p class="text-xs text-gray-500 mb-2">7个冥想课程</p>
+                        <div class="flex items-center">
+                            <div class="flex -space-x-3">
+                                <div class="w-6 h-6 rounded-full bg-gray-200 border-2 border-white flex items-center justify-center text-xs">1</div>
+                                <div class="w-6 h-6 rounded-full bg-gray-200 border-2 border-white flex items-center justify-center text-xs">2</div>
+                                <div class="w-6 h-6 rounded-full bg-gray-200 border-2 border-white flex items-center justify-center text-xs">3</div>
+                            </div>
+                            <div class="ml-2 text-xs text-purple-600">+4个课程</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="overflow-hidden rounded-2xl shadow-sm bg-white">
+                    <div class="h-32 bg-gradient-blue flex items-end p-4">
+                        <h3 class="text-white font-semibold">专注力提升</h3>
+                    </div>
+                    <div class="p-3">
+                        <p class="text-xs text-gray-500 mb-2">5个冥想课程</p>
+                        <div class="flex items-center">
+                            <div class="flex -space-x-3">
+                                <div class="w-6 h-6 rounded-full bg-gray-200 border-2 border-white flex items-center justify-center text-xs">1</div>
+                                <div class="w-6 h-6 rounded-full bg-gray-200 border-2 border-white flex items-center justify-center text-xs">2</div>
+                                <div class="w-6 h-6 rounded-full bg-gray-200 border-2 border-white flex items-center justify-center text-xs">3</div>
+                            </div>
+                            <div class="ml-2 text-xs text-blue-600">+2个课程</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 热门讲师 -->
+        <div class="mb-8">
+            <h2 class="text-base font-bold mb-4">热门讲师</h2>
+            <div class="flex space-x-4 overflow-x-auto pb-2" style="scrollbar-width: none;">
+                <div class="w-32 flex-shrink-0 flex flex-col items-center">
+                    <div class="w-16 h-16 rounded-full bg-purple-100 mb-2 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1597223557154-721c1cecc4b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=100&q=80" alt="讲师照片" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-sm font-medium">王梦瑶</h3>
+                    <p class="text-xs text-gray-500">冥想导师</p>
+                </div>
+                <div class="w-32 flex-shrink-0 flex flex-col items-center">
+                    <div class="w-16 h-16 rounded-full bg-purple-100 mb-2 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=100&q=80" alt="讲师照片" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-sm font-medium">李泽楷</h3>
+                    <p class="text-xs text-gray-500">心理学家</p>
+                </div>
+                <div class="w-32 flex-shrink-0 flex flex-col items-center">
+                    <div class="w-16 h-16 rounded-full bg-purple-100 mb-2 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1614436163996-25cee5f54290?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=100&q=80" alt="讲师照片" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-sm font-medium">张舒雅</h3>
+                    <p class="text-xs text-gray-500">瑜伽教练</p>
+                </div>
+                <div class="w-32 flex-shrink-0 flex flex-col items-center">
+                    <div class="w-16 h-16 rounded-full bg-purple-100 mb-2 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=100&q=80" alt="讲师照片" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-sm font-medium">刘天明</h3>
+                    <p class="text-xs text-gray-500">声音治疗师</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 推荐课程 -->
+        <div>
+            <h2 class="text-base font-bold mb-4">推荐课程</h2>
+            <div class="space-y-4">
+                <div class="bg-white rounded-xl p-3 shadow-sm flex">
+                    <div class="w-20 h-20 rounded-xl bg-gradient-green flex items-center justify-center mr-3 flex-shrink-0">
+                        <i class="fas fa-leaf text-white text-xl"></i>
+                    </div>
+                    <div class="flex-grow">
+                        <h3 class="text-sm font-medium mb-1">正念呼吸</h3>
+                        <p class="text-xs text-gray-500 mb-2">专注当下，感受呼吸的流动</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <i class="fas fa-clock text-gray-400 text-xs mr-1"></i>
+                                <span class="text-xs text-gray-500">10分钟</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-headphones text-gray-400 text-xs mr-1"></i>
+                                <span class="text-xs text-gray-500">引导式</span>
+                            </div>
+                            <button class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center">
+                                <i class="fas fa-play text-purple-600 text-xs"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl p-3 shadow-sm flex">
+                    <div class="w-20 h-20 rounded-xl bg-gradient-blue flex items-center justify-center mr-3 flex-shrink-0">
+                        <i class="fas fa-brain text-white text-xl"></i>
+                    </div>
+                    <div class="flex-grow">
+                        <h3 class="text-sm font-medium mb-1">放下焦虑</h3>
+                        <p class="text-xs text-gray-500 mb-2">舒缓紧张情绪，找回内心平静</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <i class="fas fa-clock text-gray-400 text-xs mr-1"></i>
+                                <span class="text-xs text-gray-500">15分钟</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-headphones text-gray-400 text-xs mr-1"></i>
+                                <span class="text-xs text-gray-500">引导式</span>
+                            </div>
+                            <button class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center">
+                                <i class="fas fa-play text-purple-600 text-xs"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl p-3 shadow-sm flex">
+                    <div class="w-20 h-20 rounded-xl bg-gradient-purple flex items-center justify-center mr-3 flex-shrink-0">
+                        <i class="fas fa-moon text-white text-xl"></i>
+                    </div>
+                    <div class="flex-grow">
+                        <h3 class="text-sm font-medium mb-1">深度睡眠</h3>
+                        <p class="text-xs text-gray-500 mb-2">引导身心放松，进入深度睡眠</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <i class="fas fa-clock text-gray-400 text-xs mr-1"></i>
+                                <span class="text-xs text-gray-500">30分钟</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-music text-gray-400 text-xs mr-1"></i>
+                                <span class="text-xs text-gray-500">音乐</span>
+                            </div>
+                            <button class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center">
+                                <i class="fas fa-play text-purple-600 text-xs"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

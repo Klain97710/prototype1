@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>静心 - 首页</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.7.2/css/all.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <div class="container mx-auto px-4 py-5 pb-20">
+        <!-- 顶部欢迎语 -->
+        <div class="flex justify-between items-center mb-6">
+            <div>
+                <h1 class="text-2xl font-bold">早上好，李明</h1>
+                <p class="text-gray-500 text-sm">让我们开始今天的冥想吧</p>
+            </div>
+            <div class="flex items-center space-x-2">
+                <span class="bg-purple-100 text-purple-700 rounded-full py-1 px-3 text-xs font-medium">连续练习 5 天</span>
+                <span class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center">
+                    <i class="fas fa-bell text-gray-400"></i>
+                </span>
+            </div>
+        </div>
+
+        <!-- 每日冥想 -->
+        <div class="bg-gradient-purple text-white rounded-2xl p-5 mb-6">
+            <div class="flex justify-between items-start">
+                <div>
+                    <h2 class="text-lg font-bold mb-1">每日推荐冥想</h2>
+                    <p class="text-white text-opacity-80 text-sm mb-3">提高专注力，缓解焦虑</p>
+                    <div class="flex items-center space-x-3">
+                        <span class="bg-white bg-opacity-20 rounded-full py-1 px-3 text-xs flex items-center">
+                            <i class="fas fa-clock mr-1"></i> 10分钟
+                        </span>
+                        <span class="bg-white bg-opacity-20 rounded-full py-1 px-3 text-xs flex items-center">
+                            <i class="fas fa-volume-up mr-1"></i> 引导式
+                        </span>
+                    </div>
+                </div>
+                <button class="w-12 h-12 bg-white rounded-full flex items-center justify-center">
+                    <i class="fas fa-play text-purple-700"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- 练习进度 -->
+        <div class="bg-white rounded-2xl p-5 mb-6 shadow-sm">
+            <h2 class="text-base font-bold mb-3">今日练习</h2>
+            <div class="flex items-center justify-between">
+                <div class="circle-progress" style="background: conic-gradient(#7c3aed 25%, #e5e7eb 0%);">
+                    <div class="progress-text">5/20 分钟</div>
+                </div>
+                <div class="ml-5">
+                    <div class="flex items-center mb-2">
+                        <div class="w-3 h-3 rounded-full bg-purple-600 mr-2"></div>
+                        <p class="text-sm">今日冥想 <span class="font-semibold">5分钟</span></p>
+                    </div>
+                    <div class="flex items-center mb-2">
+                        <div class="w-3 h-3 rounded-full bg-green-500 mr-2"></div>
+                        <p class="text-sm">呼吸练习 <span class="font-semibold">0分钟</span></p>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="w-3 h-3 rounded-full bg-blue-500 mr-2"></div>
+                        <p class="text-sm">睡眠辅助 <span class="font-semibold">0分钟</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 热门课程 -->
+        <div class="mb-6">
+            <div class="flex justify-between items-center mb-3">
+                <h2 class="text-base font-bold">热门冥想课程</h2>
+                <a href="#" class="text-purple-600 text-sm">查看全部</a>
+            </div>
+            <div class="flex space-x-4 overflow-x-auto pb-2" style="scrollbar-width: none;">
+                <div class="meditation-card w-40 flex-shrink-0">
+                    <div class="h-24 bg-gradient-blue flex items-center justify-center">
+                        <i class="fas fa-brain text-white text-2xl"></i>
+                    </div>
+                    <div class="p-3 bg-white">
+                        <h3 class="text-sm font-medium">清晨唤醒</h3>
+                        <p class="text-xs text-gray-500">15分钟</p>
+                    </div>
+                </div>
+                <div class="meditation-card w-40 flex-shrink-0">
+                    <div class="h-24 bg-gradient-green flex items-center justify-center">
+                        <i class="fas fa-leaf text-white text-2xl"></i>
+                    </div>
+                    <div class="p-3 bg-white">
+                        <h3 class="text-sm font-medium">专注力提升</h3>
+                        <p class="text-xs text-gray-500">10分钟</p>
+                    </div>
+                </div>
+                <div class="meditation-card w-40 flex-shrink-0">
+                    <div class="h-24 bg-gradient-orange flex items-center justify-center">
+                        <i class="fas fa-heart text-white text-2xl"></i>
+                    </div>
+                    <div class="p-3 bg-white">
+                        <h3 class="text-sm font-medium">压力释放</h3>
+                        <p class="text-xs text-gray-500">20分钟</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 情绪调整 -->
+        <div>
+            <div class="flex justify-between items-center mb-3">
+                <h2 class="text-base font-bold">情绪调整</h2>
+                <a href="#" class="text-purple-600 text-sm">更多</a>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-white rounded-xl p-4 shadow-sm">
+                    <div class="flex items-center mb-2">
+                        <div class="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center mr-3">
+                            <i class="fas fa-cloud-rain text-purple-600"></i>
+                        </div>
+                        <h3 class="text-sm font-medium">缓解焦虑</h3>
+                    </div>
+                    <p class="text-xs text-gray-500">8分钟冥想练习</p>
+                </div>
+                <div class="bg-white rounded-xl p-4 shadow-sm">
+                    <div class="flex items-center mb-2">
+                        <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mr-3">
+                            <i class="fas fa-smile text-blue-600"></i>
+                        </div>
+                        <h3 class="text-sm font-medium">提升情绪</h3>
+                    </div>
+                    <p class="text-xs text-gray-500">12分钟冥想练习</p>
+                </div>
+                <div class="bg-white rounded-xl p-4 shadow-sm">
+                    <div class="flex items-center mb-2">
+                        <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-3">
+                            <i class="fas fa-dove text-green-600"></i>
+                        </div>
+                        <h3 class="text-sm font-medium">平静心灵</h3>
+                    </div>
+                    <p class="text-xs text-gray-500">15分钟冥想练习</p>
+                </div>
+                <div class="bg-white rounded-xl p-4 shadow-sm">
+                    <div class="flex items-center mb-2">
+                        <div class="w-10 h-10 bg-red-100 rounded-full flex items-center justify-center mr-3">
+                            <i class="fas fa-heartbeat text-red-600"></i>
+                        </div>
+                        <h3 class="text-sm font-medium">舒缓压力</h3>
+                    </div>
+                    <p class="text-xs text-gray-500">10分钟冥想练习</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

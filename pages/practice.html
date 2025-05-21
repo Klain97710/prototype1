@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>静心 - 练习</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.7.2/css/all.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <div class="container mx-auto px-4 py-5 pb-20">
+        <!-- 页面标题 -->
+        <div class="mb-6">
+            <h1 class="text-xl font-bold">冥想练习</h1>
+            <p class="text-gray-500 text-sm">自定义您的冥想体验</p>
+        </div>
+
+        <!-- 冥想计时器 -->
+        <div class="bg-white rounded-2xl shadow-sm p-6 mb-6 flex flex-col items-center">
+            <div class="breathing-circle mb-6 flex items-center justify-center">
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-purple-700 mb-2">10:00</div>
+                    <div class="text-sm text-purple-600">点击开始</div>
+                </div>
+            </div>
+            
+            <!-- 控制按钮 -->
+            <div class="flex space-x-4 mb-6">
+                <button class="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center">
+                    <i class="fas fa-redo text-gray-500"></i>
+                </button>
+                <button class="w-16 h-16 rounded-full bg-purple-600 flex items-center justify-center">
+                    <i class="fas fa-play text-white text-xl"></i>
+                </button>
+                <button class="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center">
+                    <i class="fas fa-pause text-gray-500"></i>
+                </button>
+            </div>
+            
+            <!-- 时间调整 -->
+            <div class="w-full grid grid-cols-3 gap-3 mb-4">
+                <button class="bg-gray-100 hover:bg-purple-100 text-sm py-2 rounded-lg transition-colors">5分钟</button>
+                <button class="bg-purple-100 text-purple-700 font-medium text-sm py-2 rounded-lg">10分钟</button>
+                <button class="bg-gray-100 hover:bg-purple-100 text-sm py-2 rounded-lg transition-colors">15分钟</button>
+            </div>
+            <div class="w-full grid grid-cols-2 gap-3">
+                <button class="bg-gray-100 hover:bg-purple-100 text-sm py-2 rounded-lg transition-colors">20分钟</button>
+                <button class="bg-gray-100 hover:bg-purple-100 text-sm py-2 rounded-lg transition-colors">30分钟</button>
+            </div>
+        </div>
+
+        <!-- 背景音乐 -->
+        <div class="mb-6">
+            <div class="flex justify-between items-center mb-3">
+                <h2 class="text-base font-bold">背景音乐</h2>
+                <span class="text-purple-600 text-sm">更多 ></span>
+            </div>
+            <div class="flex space-x-4 overflow-x-auto pb-2" style="scrollbar-width: none;">
+                <div class="bg-white rounded-xl p-4 shadow-sm w-32 flex-shrink-0">
+                    <div class="w-12 h-12 rounded-full bg-gradient-blue flex items-center justify-center mb-3">
+                        <i class="fas fa-water text-white"></i>
+                    </div>
+                    <h3 class="text-sm font-medium mb-1">雨声</h3>
+                    <div class="audio-wave">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl p-4 shadow-sm w-32 flex-shrink-0">
+                    <div class="w-12 h-12 rounded-full bg-gradient-green flex items-center justify-center mb-3">
+                        <i class="fas fa-tree text-white"></i>
+                    </div>
+                    <h3 class="text-sm font-medium mb-1">森林</h3>
+                    <p class="text-xs text-gray-500">自然音效</p>
+                </div>
+                <div class="bg-white rounded-xl p-4 shadow-sm w-32 flex-shrink-0">
+                    <div class="w-12 h-12 rounded-full bg-gradient-orange flex items-center justify-center mb-3">
+                        <i class="fas fa-fire text-white"></i>
+                    </div>
+                    <h3 class="text-sm font-medium mb-1">篝火</h3>
+                    <p class="text-xs text-gray-500">舒缓音效</p>
+                </div>
+                <div class="bg-white rounded-xl p-4 shadow-sm w-32 flex-shrink-0">
+                    <div class="w-12 h-12 rounded-full bg-gradient-purple flex items-center justify-center mb-3">
+                        <i class="fas fa-music text-white"></i>
+                    </div>
+                    <h3 class="text-sm font-medium mb-1">冥想音乐</h3>
+                    <p class="text-xs text-gray-500">轻音乐</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 音量调节 -->
+        <div class="bg-white rounded-xl p-4 shadow-sm mb-6">
+            <div class="flex items-center justify-between mb-2">
+                <div class="flex items-center">
+                    <i class="fas fa-volume-up text-gray-500 mr-3"></i>
+                    <h3 class="text-sm font-medium">音量</h3>
+                </div>
+                <span class="text-sm text-gray-500">65%</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-2">
+                <div class="bg-purple-600 h-2 rounded-full" style="width: 65%"></div>
+            </div>
+        </div>
+
+        <!-- 冥想提示 -->
+        <div class="bg-white rounded-xl p-4 shadow-sm mb-6">
+            <div class="flex items-center justify-between mb-3">
+                <div class="flex items-center">
+                    <i class="fas fa-bullhorn text-gray-500 mr-3"></i>
+                    <h3 class="text-sm font-medium">冥想提示</h3>
+                </div>
+                <label class="relative inline-flex items-center cursor-pointer">
+                    <input type="checkbox" checked class="sr-only peer">
+                    <div class="w-9 h-5 bg-gray-200 rounded-full peer peer-checked:bg-purple-600 peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all"></div>
+                </label>
+            </div>
+            <p class="text-xs text-gray-500">每隔一段时间播放引导提示，帮助您保持正念状态。</p>
+        </div>
+
+        <!-- 冥想姿势指南 -->
+        <div class="bg-white rounded-xl p-4 shadow-sm">
+            <div class="flex items-center mb-3">
+                <i class="fas fa-info-circle text-blue-500 mr-2"></i>
+                <h3 class="text-sm font-medium">冥想姿势指南</h3>
+            </div>
+            <p class="text-xs text-gray-500 mb-3">正确的姿势可以帮助你更快进入冥想状态。</p>
+            <button class="w-full bg-blue-50 text-blue-600 text-sm py-2 rounded-lg">查看指南</button>
+        </div>
+    </div>
+</body>
+</html> 
